@@ -36,7 +36,9 @@ def launch_setup(context, *args, **kwargs):
         parameters=[
             {
                 "input_topics": [
-                    "/sensing/lidar/top/outlier_filtered/pointcloud",
+                    "/sensing/lidar/top/rectified/pointcloud_ex",
+                    "/sensing/lidar/left/rectified/pointcloud_ex",
+                    "/sensing/lidar/right/rectified/pointcloud_ex",
                 ],
                 "output_frame": LaunchConfiguration("base_frame"),
             }
